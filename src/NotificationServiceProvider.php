@@ -18,15 +18,15 @@ class NotificationServiceProvider extends ServiceProvider
 {
     /**
      * Boot the application events.
-     * 
+     *
      * @return void
      */
     public function boot()
     {
-	    $this->loadTranslationsFrom(__DIR__ . '/lang', 'notification');
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+	    $this->loadTranslationsFrom(__DIR__ . '/Lang', 'notification');
+        $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
         $this->publishes([
-            __DIR__.'/config/config.php' => config_path('notification.php'),
+            __DIR__.'/Config/config.php' => config_path('notification.php'),
         ]);
     }
 
@@ -36,7 +36,7 @@ class NotificationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/config.php', 'notification'
+            __DIR__.'/Config/config.php', 'notification'
         );
 
         $app = $this->app;
