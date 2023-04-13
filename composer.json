@@ -1,0 +1,27 @@
+{
+    "name": "weelis/notification",
+    "description": "Weelis Notification Channel (APN, FCM, SMS, EMAIL)",
+    "authors": [{
+        "name": "Simon",
+        "email": "007lock@gmail.com"
+    }],
+    "type": "weelis-modules",
+    "dist": {
+        "url": "https://bitbucket.org/weeliscorp/notification/get/master.zip",
+        "type": "zip"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/events": "^5.1|^5.2|^5.3",
+        "illuminate/notifications": "^5.3",
+        "illuminate/support": "^5.1|^5.2|^5.3",
+        "illuminate/queue": "^5.1|^5.2|^5.3",
+        "zendframework/zendservice-apple-apns": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weelis\\Notification\\": "src/"
+        }
+    }
+}
