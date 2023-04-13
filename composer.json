@@ -6,10 +6,6 @@
         "email": "007lock@gmail.com"
     }],
     "type": "weelis-modules",
-    "dist": {
-        "url": "https://bitbucket.org/weeliscorp/notification/get/master.zip",
-        "type": "zip"
-    },
     "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^6.2",
