@@ -1,6 +1,6 @@
 <?php
 
-namespace Weelis\Notification\Fcm;
+namespace Weelis\Notification\Esms;
 
 use Weelis\Notification\Base\NotifyMessage;
 
@@ -32,7 +32,7 @@ class EsmsMessage extends NotifyMessage
     /**
      * @return string
      */
-    public function getBody() 
+    public function getBody()
     {
         return $this->body;
     }

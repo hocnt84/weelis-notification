@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
-use Weelis\Notification\Fcm\EsmsMessage;
+use Weelis\Notification\Esms\EsmsMessage;
 use Illuminate\Notifications\Messages\MailMessage;
 
 class NotificationToUser extends Notification implements ShouldQueue
